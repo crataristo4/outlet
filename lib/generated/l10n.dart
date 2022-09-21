@@ -720,10 +720,10 @@ class S {
     );
   }
 
-  /// `okay`
+  /// `Okay`
   String get okay {
     return Intl.message(
-      'okay',
+      'Okay',
       name: 'okay',
       desc: '',
       args: [],
@@ -915,6 +915,66 @@ class S {
     return Intl.message(
       'Start',
       name: 'start',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter a Nickname `
+  String get enterNickName {
+    return Intl.message(
+      'Enter a Nickname ',
+      name: 'enterNickName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `(Optional)`
+  String get optional {
+    return Intl.message(
+      '(Optional)',
+      name: 'optional',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What is it about?`
+  String get whatIsItAbout {
+    return Intl.message(
+      'What is it about?',
+      name: 'whatIsItAbout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select anonymous profile picture (avatar)`
+  String get selectAnonymousPic {
+    return Intl.message(
+      'Select anonymous profile picture (avatar)',
+      name: 'selectAnonymousPic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You are all set`
+  String get youAreAllSet {
+    return Intl.message(
+      'You are all set',
+      name: 'youAreAllSet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `We keep you anonymous always! No leaks,no names! `
+  String get weKeepYouAnonymous {
+    return Intl.message(
+      'We keep you anonymous always! No leaks,no names! ',
+      name: 'weKeepYouAnonymous',
       desc: '',
       args: [],
     );

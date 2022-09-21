@@ -40,6 +40,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Didn’t receive code "),
         "editProfile": MessageLookupByLibrary.simpleMessage("Edit profile"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
+        "enterNickName":
+            MessageLookupByLibrary.simpleMessage("Enter a Nickname "),
         "female": MessageLookupByLibrary.simpleMessage("Female"),
         "finishingUp": MessageLookupByLibrary.simpleMessage("Finishing up ..."),
         "french": MessageLookupByLibrary.simpleMessage("French"),
@@ -67,7 +69,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "notification": MessageLookupByLibrary.simpleMessage("Notification"),
         "number": MessageLookupByLibrary.simpleMessage("Number"),
         "ok": MessageLookupByLibrary.simpleMessage("OK"),
-        "okay": MessageLookupByLibrary.simpleMessage("okay"),
+        "okay": MessageLookupByLibrary.simpleMessage("Okay"),
+        "optional": MessageLookupByLibrary.simpleMessage("(Optional)"),
         "pause": MessageLookupByLibrary.simpleMessage("Pause"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone number"),
         "pleaseAcceptTnC": MessageLookupByLibrary.simpleMessage(
@@ -103,6 +106,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "save": MessageLookupByLibrary.simpleMessage("Save"),
         "search": MessageLookupByLibrary.simpleMessage("Search"),
         "select": MessageLookupByLibrary.simpleMessage("Select"),
+        "selectAnonymousPic": MessageLookupByLibrary.simpleMessage(
+            "Select anonymous profile picture (avatar)"),
         "selectGender": MessageLookupByLibrary.simpleMessage("Select gender"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
         "sendAnonymousMessage":
@@ -130,7 +135,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "useThis": MessageLookupByLibrary.simpleMessage("Use this"),
         "verify": MessageLookupByLibrary.simpleMessage("Verify"),
         "video": MessageLookupByLibrary.simpleMessage("video"),
+        "weKeepYouAnonymous": MessageLookupByLibrary.simpleMessage(
+            "We keep you anonymous always! No leaks,no names! "),
+        "whatIsItAbout":
+            MessageLookupByLibrary.simpleMessage("What is it about?"),
         "yes": MessageLookupByLibrary.simpleMessage("Yes"),
+        "youAreAllSet": MessageLookupByLibrary.simpleMessage("You are all set"),
         "youHaveNotPosted":
             MessageLookupByLibrary.simpleMessage("You have not made any post")
       };

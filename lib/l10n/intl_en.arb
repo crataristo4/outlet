@@ -66,7 +66,7 @@
   "showLess": "show less",
   "pleaseCheckYourInternet": "Please check your internet",
   "addAudio": "Add Audio",
-  "okay": "okay",
+  "okay": "Okay",
   "retry": "Retry",
   "useThis": "Use this",
   "recordingPaused": "Video recording paused!",
@@ -85,5 +85,11 @@
   "providingOutletDescription": "Listen to people who wants share what is on their mind",
   "sendAnonymousMessage": "Send anonymous messages",
   "sendAnonymousMessageDescription": "Send messages to people while still being anonymously",
-  "start": "Start"
+  "start": "Start",
+  "enterNickName": "Enter a Nickname ",
+  "optional": "(Optional)",
+  "whatIsItAbout": "What is it about?",
+  "selectAnonymousPic": "Select anonymous profile picture (avatar)",
+  "youAreAllSet": "You are all set",
+  "weKeepYouAnonymous": "We keep you anonymous always! No leaks,no names! "
 }

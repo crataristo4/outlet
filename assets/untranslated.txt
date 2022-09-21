@@ -86,6 +86,12 @@
     "providingOutletDescription",
     "sendAnonymousMessage",
     "sendAnonymousMessageDescription",
-    "start"
+    "start",
+    "enterNickName",
+    "optional",
+    "whatIsItAbout",
+    "selectAnonymousPic",
+    "youAreAllSet",
+    "weKeepYouAnonymous"
   ]
 }
