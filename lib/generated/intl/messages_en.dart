@@ -32,7 +32,6 @@ class MessageLookup extends MessageLookupByLibrary {
         "appName": MessageLookupByLibrary.simpleMessage("Outlet"),
         "appSettings": MessageLookupByLibrary.simpleMessage("App Settings"),
         "audio": MessageLookupByLibrary.simpleMessage("audio"),
-        "beOnAlert": MessageLookupByLibrary.simpleMessage("Be on alert"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "change": MessageLookupByLibrary.simpleMessage("Change"),
         "conTinue": MessageLookupByLibrary.simpleMessage("Continue"),
@@ -82,6 +81,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "provideFullName": MessageLookupByLibrary.simpleMessage(
             "Please Provide Your Full Name"),
+        "providingOutlet": MessageLookupByLibrary.simpleMessage(
+            "Providing an outlet for people"),
+        "providingOutletDescription": MessageLookupByLibrary.simpleMessage(
+            "Listen to people who wants share what is on their mind"),
         "record": MessageLookupByLibrary.simpleMessage("Record"),
         "recordingEnd":
             MessageLookupByLibrary.simpleMessage("Video recording ended"),
@@ -102,8 +105,16 @@ class MessageLookup extends MessageLookupByLibrary {
         "select": MessageLookupByLibrary.simpleMessage("Select"),
         "selectGender": MessageLookupByLibrary.simpleMessage("Select gender"),
         "send": MessageLookupByLibrary.simpleMessage("Send"),
+        "sendAnonymousMessage":
+            MessageLookupByLibrary.simpleMessage("Send anonymous messages"),
+        "sendAnonymousMessageDescription": MessageLookupByLibrary.simpleMessage(
+            "Send messages to people while still being anonymously"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "share": MessageLookupByLibrary.simpleMessage("Share"),
+        "shareYourThoughtAnonymously": MessageLookupByLibrary.simpleMessage(
+            "Share your thoughts anonymously"),
+        "shareYourThoughtDescription": MessageLookupByLibrary.simpleMessage(
+            "Share your thoughts and feeling with listeners anonymously"),
         "showLess": MessageLookupByLibrary.simpleMessage("show less"),
         "showMore": MessageLookupByLibrary.simpleMessage("show more"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),

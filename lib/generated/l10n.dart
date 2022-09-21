@@ -100,16 +100,6 @@ class S {
     );
   }
 
-  /// `Be on alert`
-  String get beOnAlert {
-    return Intl.message(
-      'Be on alert',
-      name: 'beOnAlert',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Didn’t receive code `
   String get didNtReceiveCode {
     return Intl.message(
@@ -855,6 +845,66 @@ class S {
     return Intl.message(
       'Cancel',
       name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Share your thoughts anonymously`
+  String get shareYourThoughtAnonymously {
+    return Intl.message(
+      'Share your thoughts anonymously',
+      name: 'shareYourThoughtAnonymously',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Share your thoughts and feeling with listeners anonymously`
+  String get shareYourThoughtDescription {
+    return Intl.message(
+      'Share your thoughts and feeling with listeners anonymously',
+      name: 'shareYourThoughtDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Providing an outlet for people`
+  String get providingOutlet {
+    return Intl.message(
+      'Providing an outlet for people',
+      name: 'providingOutlet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Listen to people who wants share what is on their mind`
+  String get providingOutletDescription {
+    return Intl.message(
+      'Listen to people who wants share what is on their mind',
+      name: 'providingOutletDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send anonymous messages`
+  String get sendAnonymousMessage {
+    return Intl.message(
+      'Send anonymous messages',
+      name: 'sendAnonymousMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Send messages to people while still being anonymously`
+  String get sendAnonymousMessageDescription {
+    return Intl.message(
+      'Send messages to people while still being anonymously',
+      name: 'sendAnonymousMessageDescription',
       desc: '',
       args: [],
     );

@@ -4,7 +4,6 @@
   "skip": "Skip",
   "change": "Change",
   "ok": "OK",
-  "beOnAlert": "Be on alert",
   "didNtReceiveCode": "Didn’t receive code ",
   "getStarted": "Get Started",
   "phoneNumber": "Phone number",
@@ -79,5 +78,11 @@
   "tapToRecord": "Tap to record",
   "notice": "Notice",
   "allowPermission": "Allow Permission",
-  "cancel": "Cancel"
+  "cancel": "Cancel",
+  "shareYourThoughtAnonymously": "Share your thoughts anonymously",
+  "shareYourThoughtDescription": "Share your thoughts and feeling with listeners anonymously",
+  "providingOutlet": "Providing an outlet for people",
+  "providingOutletDescription": "Listen to people who wants share what is on their mind",
+  "sendAnonymousMessage": "Send anonymous messages",
+  "sendAnonymousMessageDescription": "Send messages to people while still being anonymously"
 }

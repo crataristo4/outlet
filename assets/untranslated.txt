@@ -5,7 +5,6 @@
     "skip",
     "change",
     "ok",
-    "beOnAlert",
     "didNtReceiveCode",
     "getStarted",
     "phoneNumber",
@@ -80,6 +79,12 @@
     "tapToRecord",
     "notice",
     "allowPermission",
-    "cancel"
+    "cancel",
+    "shareYourThoughtAnonymously",
+    "shareYourThoughtDescription",
+    "providingOutlet",
+    "providingOutletDescription",
+    "sendAnonymousMessage",
+    "sendAnonymousMessageDescription"
   ]
 }

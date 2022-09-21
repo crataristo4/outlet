@@ -163,8 +163,8 @@ Widget indicator(bool isActive) {
     height: eightDp,
     width: eightDp,
     margin: const EdgeInsets.only(right: sixDp),
-    decoration:
-        BoxDecoration(color: isActive ? ThemeColor.kSecondary : ThemeColor.kAppGray, borderRadius: BorderRadius.circular(fourDp)),
+    decoration: BoxDecoration(
+        color: isActive ? ThemeColor.kPrimary : ThemeColor.kPrimaryLight, borderRadius: BorderRadius.circular(fourDp)),
   );
 }
 
