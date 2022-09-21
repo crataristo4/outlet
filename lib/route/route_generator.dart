@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:outlet/ui/views/profile/final_profile.dart';
+import 'package:outlet/ui/views/profile/profile.dart';
 
 import '../ui/views/splash_screen/splash_screen.dart';
 import '../ui/views/walkthrough/walkthrough.dart';
@@ -13,10 +15,22 @@ class RouteGenerator {
       case SplashScreenPage.routeName:
         return MaterialPageRoute(builder: (_) => const SplashScreenPage());
 
-      ///walk through screen
+      ///walk through page
       case WalkThroughPage.routeName:
         return CustomPageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) => const WalkThroughPage(),
+        );
+
+      ///profile page
+      case ProfilePage.routeName:
+        return CustomPageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => const ProfilePage(),
+        );
+
+      ///final profile
+      case FinalProfilePage.routeName:
+        return CustomPageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => FinalProfilePage(userName: args as String, image: args),
         );
 
       default:
