@@ -67,6 +67,12 @@ Future<dynamic> switchScreen(BuildContext context, String destination, {bool rep
       : Navigator.of(context).pushNamed(destination, arguments: args);
 }
 
+Future<dynamic> switchScreenWithConstructor(BuildContext context, Widget page, {bool replace = false}) {
+  return replace
+      ? Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) => page), (route) => true)
+      : Navigator.of(context).push(MaterialPageRoute(builder: (context) => page));
+}
+
 ///goes back
 void pop(BuildContext context, {dynamic args, bool route = false}) {
   if (Platform.isAndroid) {
