@@ -40,6 +40,7 @@ const fourteenDp = 14.0;
 const twoHundredDp = 200.0;
 const twoTwentyDp = 220.0;
 const twoFiftyDp = 250.0;
+const twoEightyDp = 280.0;
 const twoFortyDp = 240.0;
 const twoThirtyDp = 230.0;
 const twoFortyNineDp = 249.0;

@@ -118,6 +118,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "showLess": MessageLookupByLibrary.simpleMessage("show less"),
         "showMore": MessageLookupByLibrary.simpleMessage("show more"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
+        "start": MessageLookupByLibrary.simpleMessage("Start"),
         "tapToRecord": MessageLookupByLibrary.simpleMessage("Tap to record"),
         "termsAndConditions":
             MessageLookupByLibrary.simpleMessage("Terms & Conditions"),

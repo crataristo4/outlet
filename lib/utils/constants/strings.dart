@@ -6,10 +6,17 @@ const svgPrefix = 'assets/svg/';
 const lottyPrefix = 'assets/lotties/';
 
 //..images png/jpg/jpeg...//
-const kWt1 = '${imagePrefix}wt1.png';
+const kCry = '${imagePrefix}cry.jpg';
+const kSad = '${imagePrefix}sad.png';
+const kJoke = '${imagePrefix}joke.png';
+const kLady = '${imagePrefix}lady.png';
+const kManHat = '${imagePrefix}hat.png';
+const kMic = '${imagePrefix}mic.png';
+const kLoud = '${imagePrefix}loud.jpg';
+const kFace = '${imagePrefix}face.png';
+const kDoc = '${imagePrefix}doc.png';
 
 //svg
-const kDGreenSvg = '${svgPrefix}dgreen.svg';
 
 //lotties
 const kLogoLotty = '${lottyPrefix}logo.json';

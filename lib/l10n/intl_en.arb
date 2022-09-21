@@ -84,5 +84,6 @@
   "providingOutlet": "Providing an outlet for people",
   "providingOutletDescription": "Listen to people who wants share what is on their mind",
   "sendAnonymousMessage": "Send anonymous messages",
-  "sendAnonymousMessageDescription": "Send messages to people while still being anonymously"
+  "sendAnonymousMessageDescription": "Send messages to people while still being anonymously",
+  "start": "Start"
 }

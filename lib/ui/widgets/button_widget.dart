@@ -8,9 +8,9 @@ import '../../utils/constants/dimens.dart';
 class ButtonWidget extends StatelessWidget {
   final String buttonName;
   final VoidCallback onButtonTapped;
-  final Color buttonColor;
+  final Color? buttonColor;
   final Color buttonTextColor;
-  final Color borderColor;
+  final Color? borderColor;
   final BorderRadiusGeometry borderRadiusGeometry;
   final double width;
   final double elevation;
@@ -21,7 +21,7 @@ class ButtonWidget extends StatelessWidget {
       required this.buttonName,
       required this.onButtonTapped,
       this.elevation = 0,
-      required this.buttonColor,
+      this.buttonColor,
       this.borderColor = Colors.transparent,
       required this.width,
       this.edgeInsetsGeometry = EdgeInsets.zero,
@@ -47,12 +47,49 @@ class ButtonWidget extends StatelessWidget {
               style: TextStyle(color: buttonTextColor, fontFamily: 'medium'),
             ),
             style: ButtonStyle(
-                side: MaterialStateProperty.all(BorderSide(color: borderColor)),
+                side: MaterialStateProperty.all(BorderSide(color: borderColor!)),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(RoundedRectangleBorder(
                   borderRadius: borderRadiusGeometry,
                 )),
                 elevation: MaterialStateProperty.resolveWith<double>((states) => elevation),
                 backgroundColor: MaterialStateProperty.all(buttonColor)),
+          ),
+        );
+      },
+    );
+  }
+}
+
+class GradientButtonWidget extends StatelessWidget {
+  final VoidCallback onTap;
+  final BorderRadiusGeometry? borderRadiusGeometry;
+  final double width;
+  final Widget child;
+  final EdgeInsetsGeometry edgeInsetsGeometry;
+  final Gradient gradient;
+
+  const GradientButtonWidget(
+      {Key? key,
+      required this.onTap,
+      required this.width,
+      this.edgeInsetsGeometry = EdgeInsets.zero,
+      required this.borderRadiusGeometry,
+      required this.gradient,
+      required this.child})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return LayoutBuilder(
+      builder: (BuildContext context, BoxConstraints constraints) {
+        return GestureDetector(
+          onTap: onTap,
+          child: Container(
+            width: width,
+            height: fortyFourDp,
+            margin: edgeInsetsGeometry,
+            decoration: BoxDecoration(gradient: gradient, borderRadius: borderRadiusGeometry),
+            child: child,
           ),
         );
       },
