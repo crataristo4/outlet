@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class ThemeColor {
@@ -14,9 +15,12 @@ class ThemeColor {
   static Color kPending = const Color(0xfff29f18);
   static const kAppGrayComment = Color(0xff545454);
   static const kAppBgColor = Color(0xffe5e5e5);
+  static const kWaveColor = Color(0xffe5e5e5);
 
   //*******GRADIENT************//
   static List<Color> gradientPrimary = [Color(0xff8e2de2), Color(0xff4a00e0)];
+
+  static Gradient buttonGradient = LinearGradient(colors: ThemeColor.gradientPrimary, begin: Alignment.topLeft);
 
   //todo change to match screen where necessary
   static void overlayStyle(Color color) {
