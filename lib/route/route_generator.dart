@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:outlet/business_logic/models/outlets.dart';
+import 'package:outlet/ui/views/messages/messages_page.dart';
 import 'package:outlet/ui/views/profile/final_profile.dart';
 import 'package:outlet/ui/views/profile/profile.dart';
 
@@ -38,6 +40,12 @@ class RouteGenerator {
       case MainPage.routeName:
         return CustomPageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) => MainPage(),
+        );
+
+      ///messages page
+      case MessagePage.routeName:
+        return CustomPageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => MessagePage(outlet: args as Outlet),
         );
 
       default:
