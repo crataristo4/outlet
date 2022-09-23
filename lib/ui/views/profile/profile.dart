@@ -127,7 +127,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     onTap: () => onTap(),
-                    gradient: LinearGradient(colors: ThemeColor.gradientPrimary, begin: Alignment.topLeft),
+                    // gradient: LinearGradient(colors: ThemeColor.gradientPrimary, begin: Alignment.topLeft),
                     width: MediaQuery.of(context).size.width,
                     borderRadiusGeometry: BorderRadius.circular(twentyDp),
                     edgeInsetsGeometry: EdgeInsets.symmetric(vertical: twentyDp, horizontal: twentyDp))
