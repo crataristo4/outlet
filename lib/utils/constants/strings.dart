@@ -17,6 +17,7 @@ const kFace = '${imagePrefix}face.png';
 const kDoc = '${imagePrefix}doc.png';
 const kVoiceWave = '${imagePrefix}voicewave.png';
 const kHeadPhone = '${imagePrefix}headphone.png';
+const kHeadPhone1 = '${imagePrefix}headphone1.png';
 
 //user profile image selection
 const kAvatar = '${imagePrefix}av.png';
@@ -33,6 +34,8 @@ const kAvatar7 = '${imagePrefix}av7.png';
 const kOutletSvg = '${svgPrefix}outlet.svg';
 const kProfileSvg = '${svgPrefix}profile.svg';
 const kMsgSvg = '${svgPrefix}msgs.svg';
+const kAttachSvg = '${svgPrefix}attach.svg';
+const kEarSvg = '${svgPrefix}ear.svg';
 
 const kMenuSvg = '${svgPrefix}menu.svg';
 const kCalenderSvg = '${svgPrefix}calender.svg';
