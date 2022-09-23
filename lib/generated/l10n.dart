@@ -970,11 +970,81 @@ class S {
     );
   }
 
-  /// `We keep you anonymous always! No leaks,no names! `
+  /// `We keep you anonymous always! No leaks,no names!`
   String get weKeepYouAnonymous {
     return Intl.message(
-      'We keep you anonymous always! No leaks,no names! ',
+      'We keep you anonymous always! No leaks,no names!',
       name: 'weKeepYouAnonymous',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Outlets`
+  String get outlets {
+    return Intl.message(
+      'Outlets',
+      name: 'outlets',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Messages`
+  String get messages {
+    return Intl.message(
+      'Messages',
+      name: 'messages',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Create an outlet`
+  String get createAnOutlet {
+    return Intl.message(
+      'Create an outlet',
+      name: 'createAnOutlet',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Help Center`
+  String get helpCenter {
+    return Intl.message(
+      'Help Center',
+      name: 'helpCenter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `by`
+  String get by {
+    return Intl.message(
+      'by',
+      name: 'by',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `People listening`
+  String get peopleListening {
+    return Intl.message(
+      'People listening',
+      name: 'peopleListening',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Set Reminder`
+  String get setReminder {
+    return Intl.message(
+      'Set Reminder',
+      name: 'setReminder',
       desc: '',
       args: [],
     );

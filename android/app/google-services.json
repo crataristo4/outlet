@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "213476196438",
+    "project_id": "outlet-anonymous-app",
+    "storage_bucket": "outlet-anonymous-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213476196438:android:94afdaff64756a1c2e3bf7",
+        "android_client_info": {
+          "package_name": "com.outlet.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213476196438-ikeufku583i9pa89hl9n8ia3d75te406.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.outlet.app",
+            "certificate_hash": "f9b1907c8ec6b2c1968912a21b1ff0977629571c"
+          }
+        },
+        {
+          "client_id": "213476196438-pb7rgbnoskhl9vub19rr3vogu2oc8ep3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJK7dUVipJdoUIxnNYQywr65aLAOxL440"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213476196438-pb7rgbnoskhl9vub19rr3vogu2oc8ep3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "213476196438-emm095rmvn0ikl76bkjo9m9kbpirlt27.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.outlet.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

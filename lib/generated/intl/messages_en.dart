@@ -32,9 +32,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "appName": MessageLookupByLibrary.simpleMessage("Outlet"),
         "appSettings": MessageLookupByLibrary.simpleMessage("App Settings"),
         "audio": MessageLookupByLibrary.simpleMessage("audio"),
+        "by": MessageLookupByLibrary.simpleMessage("by"),
         "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "change": MessageLookupByLibrary.simpleMessage("Change"),
         "conTinue": MessageLookupByLibrary.simpleMessage("Continue"),
+        "createAnOutlet":
+            MessageLookupByLibrary.simpleMessage("Create an outlet"),
         "details": MessageLookupByLibrary.simpleMessage("Details"),
         "didNtReceiveCode":
             MessageLookupByLibrary.simpleMessage("Didn’t receive code "),
@@ -49,6 +52,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "gender": MessageLookupByLibrary.simpleMessage("Gender"),
         "getStarted": MessageLookupByLibrary.simpleMessage("Get Started"),
         "getSupport": MessageLookupByLibrary.simpleMessage("Get Support"),
+        "helpCenter": MessageLookupByLibrary.simpleMessage("Help Center"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "iAgreeToThe": MessageLookupByLibrary.simpleMessage("I agree to the "),
         "image": MessageLookupByLibrary.simpleMessage("image"),
@@ -61,6 +65,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "male": MessageLookupByLibrary.simpleMessage("Male"),
         "map": MessageLookupByLibrary.simpleMessage("Map"),
+        "messages": MessageLookupByLibrary.simpleMessage("Messages"),
         "myPosts": MessageLookupByLibrary.simpleMessage("My Posts"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "next": MessageLookupByLibrary.simpleMessage("Next"),
@@ -71,7 +76,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "ok": MessageLookupByLibrary.simpleMessage("OK"),
         "okay": MessageLookupByLibrary.simpleMessage("Okay"),
         "optional": MessageLookupByLibrary.simpleMessage("(Optional)"),
+        "outlets": MessageLookupByLibrary.simpleMessage("Outlets"),
         "pause": MessageLookupByLibrary.simpleMessage("Pause"),
+        "peopleListening":
+            MessageLookupByLibrary.simpleMessage("People listening"),
         "phoneNumber": MessageLookupByLibrary.simpleMessage("Phone number"),
         "pleaseAcceptTnC": MessageLookupByLibrary.simpleMessage(
             "Please accept the Terms and conditions"),
@@ -114,6 +122,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Send anonymous messages"),
         "sendAnonymousMessageDescription": MessageLookupByLibrary.simpleMessage(
             "Send messages to people while still being anonymously"),
+        "setReminder": MessageLookupByLibrary.simpleMessage("Set Reminder"),
         "settings": MessageLookupByLibrary.simpleMessage("Settings"),
         "share": MessageLookupByLibrary.simpleMessage("Share"),
         "shareYourThoughtAnonymously": MessageLookupByLibrary.simpleMessage(
@@ -136,7 +145,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "verify": MessageLookupByLibrary.simpleMessage("Verify"),
         "video": MessageLookupByLibrary.simpleMessage("video"),
         "weKeepYouAnonymous": MessageLookupByLibrary.simpleMessage(
-            "We keep you anonymous always! No leaks,no names! "),
+            "We keep you anonymous always! No leaks,no names!"),
         "whatIsItAbout":
             MessageLookupByLibrary.simpleMessage("What is it about?"),
         "yes": MessageLookupByLibrary.simpleMessage("Yes"),
