@@ -8,15 +8,10 @@ Outlet outletFromJson(String str) => Outlet.fromJson(json.decode(str));
 String outletToJson(Outlet data) => json.encode(data.toJson());
 
 class Outlet {
-  Outlet({
-    this.reminder,
-    this.audioUrl,
-    this.message,
-    this.totalListeners,
-    this.username,
-    this.listeners,
-  });
+  Outlet(
+      {this.reminder, this.audioUrl, this.message, this.totalListeners, this.username, this.listeners, required this.outletId});
 
+  String outletId;
   DateTime? reminder;
   String? audioUrl;
   String? message;
@@ -25,6 +20,7 @@ class Outlet {
   List<User>? listeners;
 
   factory Outlet.fromJson(Map<String, dynamic> json) => Outlet(
+        outletId: json["outletId"],
         reminder: DateTime.parse(json["reminder"]),
         audioUrl: json["audioUrl"],
         message: json["message"],
@@ -34,6 +30,7 @@ class Outlet {
       );
 
   Map<String, dynamic> toJson() => {
+        "outletId": outletId,
         "reminder": reminder?.toIso8601String(),
         "audioUrl": audioUrl,
         "message": message,
@@ -45,6 +42,7 @@ class Outlet {
 
 List<Outlet> listOfOutlets = [
   Outlet(
+      outletId: "1",
       message: 'What do you do when you are under pressure.What do you do when you are under pressure',
       totalListeners: 125,
       username: '@dev-enoch',
@@ -56,6 +54,7 @@ List<Outlet> listOfOutlets = [
         User(username: "@Sarah", avatar: kAvatar2),
       ]),
   Outlet(
+      outletId: "2",
       message: 'What do you do when you are under pressure',
       totalListeners: 125,
       username: '@dev-enoch',
@@ -67,6 +66,7 @@ List<Outlet> listOfOutlets = [
         User(username: "@Sarah", avatar: kAvatar2),
       ]),
   Outlet(
+      outletId: "3",
       message: 'What do you do when you are under pressure',
       totalListeners: 125,
       username: '@dev-enoch',
@@ -78,6 +78,7 @@ List<Outlet> listOfOutlets = [
         User(username: "@Sarah", avatar: kAvatar2),
       ]),
   Outlet(
+      outletId: "4",
       message: 'What do you do when you are under pressure',
       totalListeners: 125,
       username: '@dev-enoch',
@@ -89,6 +90,7 @@ List<Outlet> listOfOutlets = [
         User(username: "@Sarah", avatar: kAvatar2),
       ]),
   Outlet(
+      outletId: "5",
       message: 'What do you do when you are under pressure',
       totalListeners: 125,
       username: '@dev-enoch',
