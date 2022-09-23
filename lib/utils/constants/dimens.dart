@@ -1,6 +1,7 @@
 const sixteenDp = 16.0;
 const oneSixtyDp = 160.0;
 const eighteenDp = 18.0;
+const nineteenDp = 19.0;
 const eightDp = 8.0;
 const double onePointFive = 1.5;
 const double twoPointEight = 2.8;

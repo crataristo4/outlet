@@ -66,7 +66,10 @@ class GradientButtonWidget extends StatelessWidget {
   final BorderRadiusGeometry? borderRadiusGeometry;
   final double width;
   final Widget child;
+  final BoxShape? boxShape;
+  final double height;
   final EdgeInsetsGeometry edgeInsetsGeometry;
+
   // final Gradient gradient;
 
   const GradientButtonWidget(
@@ -74,6 +77,8 @@ class GradientButtonWidget extends StatelessWidget {
       required this.onTap,
       required this.width,
       this.edgeInsetsGeometry = EdgeInsets.zero,
+      this.height = fortyFourDp,
+      this.boxShape = BoxShape.rectangle,
       required this.borderRadiusGeometry,
       // required this.gradient,
       required this.child})
@@ -87,9 +92,9 @@ class GradientButtonWidget extends StatelessWidget {
           onTap: onTap,
           child: Container(
             width: width,
-            height: fortyFourDp,
+            height: height,
             margin: edgeInsetsGeometry,
-            decoration: BoxDecoration(gradient: ThemeColor.buttonGradient, borderRadius: borderRadiusGeometry),
+            decoration: BoxDecoration(shape: boxShape!, gradient: ThemeColor.buttonGradient, borderRadius: borderRadiusGeometry),
             child: child,
           ),
         );

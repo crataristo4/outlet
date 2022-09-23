@@ -30,6 +30,7 @@ class InputWidget extends StatefulWidget {
   final double width;
   final TextAlign textAlign;
   final Function()? onTap;
+  final double borderRadius;
 
   InputWidget({
     Key? key,
@@ -45,6 +46,7 @@ class InputWidget extends StatefulWidget {
     this.isDropDown = false,
     this.maxLines = 1,
     this.maxLength = 6,
+    this.borderRadius = sixDp,
     this.focusAndEnableColor = Colors.transparent,
     this.filledColor = ThemeColor.kAppGrayLight,
     this.inputType = TextInputType.text,
@@ -155,38 +157,30 @@ class _InputWidgetState extends State<InputWidget> {
           onTap: widget.onTap,
           textCapitalization: widget.textCapitalization,
           decoration: InputDecoration(
-              border:
-                  const OutlineInputBorder(borderSide: BorderSide.none, borderRadius: BorderRadius.all(Radius.circular(eightDp))),
+              border: OutlineInputBorder(
+                  borderSide: BorderSide.none, borderRadius: BorderRadius.all(Radius.circular(widget.borderRadius))),
               contentPadding: const EdgeInsets.symmetric(horizontal: twelveDp, vertical: eightDp),
               filled: true,
               fillColor: widget.filledColor,
               helperText: widget.helperText,
+              prefixIcon: widget.prefix,
               suffixIcon:
                   widget.isDropDown ? const Icon(Icons.keyboard_arrow_down_outlined, color: Colors.black) : widget.suffixIcon,
               hintText: widget.hint,
               helperStyle: const TextStyle(fontSize: tenDp),
               hintStyle: const TextStyle(color: ThemeColor.kAppGrayDeep, fontFamily: 'regular'),
               focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(
-                    color: widget.focusAndEnableColor,
-                  ),
-                  borderRadius: const BorderRadius.all(Radius.circular(sixDp))),
+                  borderSide: BorderSide(color: widget.focusAndEnableColor),
+                  borderRadius: BorderRadius.all(Radius.circular(widget.borderRadius))),
               enabledBorder: OutlineInputBorder(
-                borderRadius: const BorderRadius.all(Radius.circular(sixDp)),
-                borderSide: BorderSide(
-                  color: widget.focusAndEnableColor,
-                ),
-              ),
-              errorBorder: const OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(sixDp)),
-                  borderSide: BorderSide(
-                    color: ThemeColor.accent,
-                  )),
-              focusedErrorBorder: const OutlineInputBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(sixDp)),
-                  borderSide: BorderSide(
-                    color: ThemeColor.accent,
-                  ))
+                  borderRadius: BorderRadius.all(Radius.circular(widget.borderRadius)),
+                  borderSide: BorderSide(color: widget.focusAndEnableColor)),
+              errorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(widget.borderRadius)),
+                  borderSide: BorderSide(color: ThemeColor.accent)),
+              focusedErrorBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(widget.borderRadius)),
+                  borderSide: BorderSide(color: ThemeColor.accent))
               // disabledBorder: InputBorder.none,
               ),
         ));
