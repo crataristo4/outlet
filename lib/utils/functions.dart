@@ -7,6 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:intl/intl.dart';
 import 'package:logger/logger.dart';
 import 'package:outlet/generated/l10n.dart';
 import 'package:path_provider/path_provider.dart';
@@ -144,6 +145,20 @@ Future<void> launchUrl(String url) async {
     ///show error --- todo
     throw 'Error $url';
   }
+}
+
+//text span
+TextSpan textSpan(String value, TextStyle textStyle) {
+  return TextSpan(
+    text: value,
+    style: textStyle,
+  );
+}
+
+//date time formatter
+
+String dateFormatter({required String formatType, required DateTime dateTime}) {
+  return DateFormat(formatType).format(dateTime);
 }
 
 ///back button
