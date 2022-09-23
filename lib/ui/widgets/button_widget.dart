@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../utils/constants/dimens.dart';
+import '../../utils/constants/theme_colors.dart';
 
 class ButtonWidget extends StatelessWidget {
   final String buttonName;
@@ -66,7 +67,7 @@ class GradientButtonWidget extends StatelessWidget {
   final double width;
   final Widget child;
   final EdgeInsetsGeometry edgeInsetsGeometry;
-  final Gradient gradient;
+  // final Gradient gradient;
 
   const GradientButtonWidget(
       {Key? key,
@@ -74,7 +75,7 @@ class GradientButtonWidget extends StatelessWidget {
       required this.width,
       this.edgeInsetsGeometry = EdgeInsets.zero,
       required this.borderRadiusGeometry,
-      required this.gradient,
+      // required this.gradient,
       required this.child})
       : super(key: key);
 
@@ -88,7 +89,7 @@ class GradientButtonWidget extends StatelessWidget {
             width: width,
             height: fortyFourDp,
             margin: edgeInsetsGeometry,
-            decoration: BoxDecoration(gradient: gradient, borderRadius: borderRadiusGeometry),
+            decoration: BoxDecoration(gradient: ThemeColor.buttonGradient, borderRadius: borderRadiusGeometry),
             child: child,
           ),
         );
