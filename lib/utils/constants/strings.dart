@@ -15,8 +15,10 @@ const kMic = '${imagePrefix}mic.png';
 const kLoud = '${imagePrefix}loud.jpg';
 const kFace = '${imagePrefix}face.png';
 const kDoc = '${imagePrefix}doc.png';
+const kVoiceWave = '${imagePrefix}voicewave.png';
+const kHeadPhone = '${imagePrefix}headphone.png';
 
-//svg
+//user profile image selection
 const kAvatar = '${imagePrefix}av.png';
 const kAvatar1 = '${imagePrefix}av1.png';
 const kAvatar2 = '${imagePrefix}av2.png';
@@ -26,5 +28,15 @@ const kAvatar5 = '${imagePrefix}av5.png';
 const kAvatar6 = '${imagePrefix}av6.png';
 const kAvatar7 = '${imagePrefix}av7.png';
 
+///svg
+//navigation drawer svg
+const kOutletSvg = '${svgPrefix}outlet.svg';
+const kProfileSvg = '${svgPrefix}profile.svg';
+const kMsgSvg = '${svgPrefix}msgs.svg';
+
+const kMenuSvg = '${svgPrefix}menu.svg';
+const kCalenderSvg = '${svgPrefix}calender.svg';
+
 //lotties
 const kLogoLotty = '${lottyPrefix}logo.json';
+const kRecordLotty = '${lottyPrefix}record.json';
