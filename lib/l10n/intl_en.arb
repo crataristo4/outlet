@@ -91,5 +91,12 @@
   "whatIsItAbout": "What is it about?",
   "selectAnonymousPic": "Select anonymous profile picture (avatar)",
   "youAreAllSet": "You are all set",
-  "weKeepYouAnonymous": "We keep you anonymous always! No leaks,no names! "
+  "weKeepYouAnonymous": "We keep you anonymous always! No leaks,no names!",
+  "outlets": "Outlets",
+  "messages": "Messages",
+  "createAnOutlet": "Create an outlet",
+  "helpCenter": "Help Center",
+  "by": "by",
+  "peopleListening": "People listening",
+  "setReminder": "Set Reminder"
 }
