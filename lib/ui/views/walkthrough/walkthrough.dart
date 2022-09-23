@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:outlet/ui/views/profile/profile.dart';
 import 'package:outlet/utils/constants/dimens.dart';
-import 'package:outlet/utils/constants/theme_colors.dart';
 
 import '../../../generated/l10n.dart';
 import '../../../utils/functions.dart';
@@ -57,7 +56,7 @@ class _WalkThroughPageState extends State<WalkThroughPage> {
                   ),
                 ),
                 onTap: () => onButtonTapped(),
-                gradient: LinearGradient(colors: ThemeColor.gradientPrimary, begin: Alignment.topLeft),
+                // gradient: LinearGradient(colors: ThemeColor.gradientPrimary, begin: Alignment.topLeft),
                 width: MediaQuery.of(context).size.width,
                 borderRadiusGeometry: BorderRadius.circular(twentyDp),
                 edgeInsetsGeometry: EdgeInsets.symmetric(vertical: twentyDp, horizontal: twentyDp)),
