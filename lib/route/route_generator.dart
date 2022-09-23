@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:outlet/ui/views/profile/final_profile.dart';
 import 'package:outlet/ui/views/profile/profile.dart';
 
+import '../ui/views/main_page/main_page.dart';
 import '../ui/views/splash_screen/splash_screen.dart';
 import '../ui/views/walkthrough/walkthrough.dart';
 
@@ -31,6 +32,12 @@ class RouteGenerator {
       case FinalProfilePage.routeName:
         return CustomPageRouteBuilder(
           pageBuilder: (context, animation, secondaryAnimation) => FinalProfilePage(userName: args as String, image: args),
+        );
+
+      ///main page
+      case MainPage.routeName:
+        return CustomPageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => MainPage(),
         );
 
       default:
