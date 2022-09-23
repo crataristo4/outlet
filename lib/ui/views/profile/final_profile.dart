@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:outlet/ui/views/main_page/main_page.dart';
 import 'package:outlet/ui/widgets/animated.column.dart';
 import 'package:outlet/ui/widgets/app_sliver_appbar.dart';
 
 import '../../../generated/l10n.dart';
 import '../../../utils/constants/dimens.dart';
-import '../../../utils/constants/theme_colors.dart';
+import '../../../utils/functions.dart';
 import '../../widgets/button_widget.dart';
 
 class FinalProfilePage extends StatefulWidget {
@@ -54,8 +55,8 @@ class _FinalProfilePageState extends State<FinalProfilePage> {
                         style: TextStyle(color: Colors.white, fontFamily: 'extraBold'),
                       ),
                     ),
-                    onTap: () => onTap(),
-                    gradient: LinearGradient(colors: ThemeColor.gradientPrimary, begin: Alignment.topLeft),
+                    onTap: () => onOkTapped(),
+                    //gradient: ThemeColor.buttonGradient,
                     width: MediaQuery.of(context).size.width,
                     borderRadiusGeometry: BorderRadius.circular(twentyDp),
                     edgeInsetsGeometry: EdgeInsets.symmetric(vertical: twentyDp, horizontal: twentyDp))
@@ -67,31 +68,7 @@ class _FinalProfilePageState extends State<FinalProfilePage> {
     );
   }
 
-  Widget images(String image, int index) {
-    return GestureDetector(
-      onTap: () {
-        setState(() {
-          itemSelected = index;
-        });
-      },
-      child: AnimatedContainer(
-          decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(color: itemSelected == index ? ThemeColor.kPrimary : Colors.transparent, width: 3)),
-          margin: EdgeInsets.symmetric(horizontal: twentyDp),
-          duration: Duration(milliseconds: 800),
-          child: Image.asset(image)),
-    );
+  Future<void> onOkTapped() async {
+    await switchScreen(context, MainPage.routeName);
   }
-
-  TextSpan textSpan({required String value, required String fontFamily, double? fontSize, Color? color}) {
-    return TextSpan(
-      text: value,
-      style: TextStyle(fontFamily: fontFamily, color: color, fontSize: fontSize),
-    );
-  }
-
-  onStartTapped() {}
-
-  onTap() {}
 }
