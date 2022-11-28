@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -19,7 +20,7 @@ int? onboardingPrefs;
 Future<void> main() async {
   try {
     WidgetsFlutterBinding.ensureInitialized();
-    //  await Firebase.initializeApp();
+    await Firebase.initializeApp();
     await Hive.initFlutter();
     await Hive.openBox('language');
     await setOnboarding();

@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:outlet/business_logic/models/messages.dart';
 import 'package:outlet/ui/widgets/animated.column.dart';
 import 'package:outlet/ui/widgets/app_sliver_appbar.dart';
-import 'package:outlet/ui/widgets/app_sliver_header.dart';
 import 'package:outlet/utils/constants/dimens.dart';
 import 'package:outlet/utils/constants/strings.dart';
 import 'package:outlet/utils/functions.dart';
@@ -33,6 +32,7 @@ class _MessagePageState extends State<MessagePage> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: CustomScrollView(
+        physics: NeverScrollableScrollPhysics(),
         slivers: [
           AppSliverAppBar(
               leading: backButton(context),
@@ -41,32 +41,30 @@ class _MessagePageState extends State<MessagePage> {
                 style: TextStyle(fontFamily: 'extraBold', color: Colors.black),
               ),
               action: SizedBox()),
-          AppSliverPersistentHeader(
+          SliverToBoxAdapter(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: sixteenDp),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Image.asset(kHeadPhone1),
-                    Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: eightDp),
-                        child: RichText(
-                          textWidthBasis: TextWidthBasis.parent,
-                          textAlign: TextAlign.start,
-                          text: TextSpan(
-                            text: '',
-                            children: <TextSpan>[
-                              textSpan(
-                                  '${widget.outlet.totalListeners}k ', TextStyle(fontFamily: 'extraBold', color: Colors.black)),
-                              textSpan(S.current.peopleListening, TextStyle(fontFamily: 'extraBold', color: Colors.black)),
-                            ],
-                          ),
-                        ))
-                  ],
-                ),
-              ),
-              min: nineteenDp,
-              max: nineteenDp),
+            padding: const EdgeInsets.symmetric(horizontal: sixteenDp),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Image.asset(kHeadPhone1, width: thirtyDp),
+                Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: eightDp),
+                    child: RichText(
+                      textWidthBasis: TextWidthBasis.parent,
+                      textAlign: TextAlign.start,
+                      text: TextSpan(
+                        text: '',
+                        children: <TextSpan>[
+                          textSpan('${widget.outlet.totalListeners}k ', TextStyle(fontFamily: 'extraBold', color: Colors.black)),
+                          textSpan(S.current.peopleListening, TextStyle(fontFamily: 'extraBold', color: Colors.black)),
+                        ],
+                      ),
+                    ))
+              ],
+            ),
+          )),
           SliverFillRemaining(
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
